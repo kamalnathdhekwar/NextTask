@@ -13,53 +13,53 @@ const Footer = () => {
 
        <div className="flex flex-col gap-3 justify-center items-start w-full lg:w-1/3">
             <Image
+            className="h-10 w-56"
               src={FooterLogo}
               alt="ProElevate Logo"
-              width={100}
-              height={100}
+             
             />
-            <p className="text-base text-white font-normal">Join Our Community: Connect with like-minded individuals and grow your network.</p>
+            <p className="text-base text-white dark:text-slate-200 font-normal">Join Our Community: Connect with like-minded individuals and grow your network.</p>
          </div>
 
 
 <div className="flex  sm:flex-row flex-col  justify-between lg:pl-5  pl-[12px] gap-x-8 flex-wrap">
 
 <div className="flex flex-col mb-7 lg:pl-0 gap-3">
-    <h1 className="text-white font-semibold text-[16px]">ProElevate's</h1>
+    <h1 className="text-white dark:text-slate-200  font-semibold text-[16px]">ProElevate&apos;s</h1>
     <div className="flex flex-col gap-2 mt-2">
-      <div className="text-[14px] cursor-pointer text-white transition-all duration-200 hover:text-gray-200">
+      <div className="text-[14px] cursor-pointer text-white  dark:text-slate-200  transition-all duration-200 hover:text-gray-200">
         <Link href="/privacy-policy">Privacy Policy</Link>
       </div>
-      <div className="text-[14px] cursor-pointer text-white transition-all duration-200 hover:text-gray-200">
+      <div className="text-[14px] cursor-pointer text-white   dark:text-slate-200  transition-all duration-200 hover:text-gray-200">
         <Link href="/terms-of-service">Terms of Service</Link>
       </div>
     </div>
 </div>
 
-<div className="flex flex-col mb-7 lg:pl-0 gap-3">
+<div className="flex flex-col mb-7 lg:pl-0 gap-3 text-white dark:text-slate-200 ">
     <h1 className="text-white font-semibold text-[16px]">Useful Links</h1>
     <div className="flex flex-col gap-2 mt-2">
-      <div className="text-[14px] cursor-pointer text-white transition-all duration-200 hover:text-gray-200">
+      <div className="text-[14px] cursor-pointer  transition-all duration-200 hover:text-gray-200">
         <Link href="/dsa-practice">DSA Practice</Link>
       </div>
-      <div className="text-[14px] cursor-pointer text-white transition-all duration-200 hover:text-gray-200">
+      <div className="text-[14px] cursor-pointer  transition-all duration-200 hover:text-gray-200">
         <Link href="/interviews">Interviews</Link>
       </div>
-      <div className="text-[14px] cursor-pointer text-white transition-all duration-200 hover:text-gray-200">
+      <div className="text-[14px] cursor-pointer  transition-all duration-200 hover:text-gray-200">
         <Link href="/jobs">Jobs</Link>
       </div>
-      <div className="text-[14px] cursor-pointer text-white transition-all duration-200 hover:text-gray-200">
+      <div className="text-[14px] cursor-pointer  transition-all duration-200 hover:text-gray-200">
         <Link href="/competitions">Competitions</Link>
       </div>
-      <div className="text-[14px] cursor-pointer text-white transition-all duration-200 hover:text-gray-200">
+      <div className="text-[14px] cursor-pointer  transition-all duration-200 hover:text-gray-200">
         <Link href="/resources">Resources</Link>
       </div>
     </div>
 </div>
 
-<div className="sm:pl-5 flex flex-col gap-y-8">
+<div className="sm:pl-5 flex flex-col gap-y-8 ">
     <div className="flex flex-col gap-3 justify-center items-start">
-      <p className="text-base font-bold text-gray-50">Follow us on</p>
+      <p className="text-base font-bold text-gray-100">Follow us on</p>
       <div className="flex items-start justify-center gap-3">
         <a target="_blank" className="rounded-xl p-2 border border-gray-100 hover:cursor-pointer" href="https://www.instagram.com/arshgoyalyt">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-[1.375rem] stroke-gray-50" viewBox="0 0 24 24">
@@ -79,10 +79,10 @@ const Footer = () => {
         </a>
       </div>
     </div>
-    <div className="lg:pl-0 gap-3">
-      <h1 className="text-white font-semibold text-[16px]">Contact Us</h1>
+    <div className="lg:pl-0 gap-3 text-white dark:text-slate-200 ">
+      <h1 className=" font-semibold text-[16px]">Contact Us</h1>
       <div className="flex flex-col gap-2 mt-2">
-        <div className="text-[14px] cursor-pointer text-white transition-all duration-200 flex gap-2 items-center">
+        <div className="text-[14px] cursor-pointer  transition-all duration-200 flex gap-2 items-center">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="w-5 h-5 stroke-2 stroke-white">
             <path d="m21 6-8.4 7.05a1 1 0 0 1-1.2 0L3 6m18 0a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1m18 0v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6"></path>
           </svg>
@@ -107,4 +107,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;

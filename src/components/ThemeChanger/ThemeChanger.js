@@ -31,10 +31,10 @@ const ThemeChanger = () => {
 
   return (
     <div>
-      <label className="ui-switch">
+      <label className="ui-switch ">
         <input type="checkbox" onClick={handleThemeSwitch} checked={theme === "dark"} />
         <div className="slider">
-          <div className="circle"></div>
+          <div className="circle "></div>
         </div>
       </label>
     </div>

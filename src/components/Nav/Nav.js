@@ -15,7 +15,7 @@ export default function Nav() {
     const pathname = usePathname();
 
     return (
-        <header className='w-full font-semibold sticky z-50 top-0 bg-white dark:bg-black   dark:shadow-slate-400 shadow-md'>
+        <header className='w-full font-semibold sticky z-50 top-0 bg-white dark:bg-slate-900   dark:shadow-slate-400 shadow-md'>
             <nav className="w-full px-1 xl:px-8 lg:px-4 md:h-[70px] md:py-1 py-2 flex justify-between items-center">
                 {/* logo */}
                 <div className="">
@@ -43,7 +43,7 @@ export default function Nav() {
                     </li>
                     <li>
                         <Link href="/faqs" className={`block py-2 pr-4 pl-3 duration-200 ${pathname === "/faqs" ? "text-blue-900 underline" : "text-black"} border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-900 lg:p-0 dark:text-slate-200 text-slate-800`}>
-                        page 1
+                        page 2
                         </Link>
                     </li>
                 </ul>

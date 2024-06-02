@@ -16,7 +16,7 @@ export default function Nav() {
 
     return (
         <header className='w-full font-semibold sticky z-50 top-0 bg-white dark:bg-slate-900   dark:shadow-slate-400 shadow-md'>
-            <nav className="w-full px-1 xl:px-8 lg:px-4 md:h-[70px] md:py-1 py-2 flex justify-between items-center">
+            <nav className="w-full px-1 xl:px-8 lg:px-4 md:h-[70px] md:py-1 py-3 flex justify-between items-center">
                 {/* logo */}
                 <div className="">
                     <Link href="/" className='flex justify-center items-center gap-2'>

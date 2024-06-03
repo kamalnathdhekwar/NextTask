@@ -67,7 +67,7 @@ export default function Nav() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/EventForm" className={`block py-2 pr-4 pl-3 text-xl hover:scale-110 duration-300 hover:text-indigo-600 ${pathname === "/about" ? "text-slate-100 text-3xl" : "text-blue-900 font-semibold dark:text-slate-300"} dark:text-slate-200`}>
+                    <Link href="/eventform" className={`block py-2 pr-4 pl-3 text-xl hover:scale-110 duration-300 hover:text-indigo-600 ${pathname === "/about" ? "text-slate-100 text-3xl" : "text-blue-900 font-semibold dark:text-slate-300"} dark:text-slate-200`}>
                     EventForm
                     </Link>
                 </li>

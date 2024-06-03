@@ -1,22 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
 
-const Card = () => {
+const Card = ({heading, image,cardDetail,navpage}) => {
   return (
     <div>
-        <div className="w-48 h-48 bg-slate-300">
+        <div className="w-full lg:w-3/4 h-48 rounded-xl bg-indigo-400 flex flex-col gap-4 p-6 bg-info-500 relative">
             {/* heading */}
-            <h1 className="text-5xl">this is heaibng</h1>
+            <h1 className="font-bold text-lg text-white">{heading}</h1>
 
             {/* description */}
-            <p className=""></p>
+            <p className="">{cardDetail}</p>
 
             {/* navigate link */}
 
             <Link
-            href="/eventform"
+            href={`/${navpage}`}
             >
-                view more
+                {heading}
             </Link>
         </div>
     </div>

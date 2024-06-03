@@ -15,7 +15,7 @@ export default function Nav() {
     const pathname = usePathname();
 
     return (
-        <header className='w-full font-semibold sticky z-50 top-0 bg-white dark:bg-slate-900   dark:shadow-slate-400 shadow-md'>
+        <header className='w-full font-semibold sticky z-50 top-0 bg-white dark:bg-slate-900   dark:shadow-slate-400 shadow-md px-2 md:px-4'>
             <nav className="w-full px-1 xl:px-8 lg:px-4 md:h-[70px] md:py-1 py-3 flex justify-between items-center">
                 {/* logo */}
                 <div className="">
@@ -46,7 +46,7 @@ export default function Nav() {
                         EventList
                         </Link>
                     </li>
-                    
+
                 </ul>
 
                 <div className="flex gap-2 justify-center items-center">

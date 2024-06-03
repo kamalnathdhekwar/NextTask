@@ -3,7 +3,6 @@ import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
 import { EventProvider } from '../components/EventContext';
-import Script from 'next/script';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +15,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
       </head>
       <body className={`${inter.className} dark:bg-slate-900`}>
         <EventProvider>
@@ -24,11 +24,11 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
         </EventProvider>
-        
-        <Script src="https://unpkg.com/aos@next/dist/aos.js" strategy="afterInteractive" />
-        <Script id="aos-init" strategy="afterInteractive">
-          {`AOS.init();`}
-        </Script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+    AOS.init();
+    </script>
       </body>
     </html>
   );

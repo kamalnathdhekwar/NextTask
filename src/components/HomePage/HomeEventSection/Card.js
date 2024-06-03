@@ -10,13 +10,13 @@ const Card = ({heading, image,cardDetail,navPage,bgColor}) => {
         <div className=" hover:scale-110 duration-500 cursor-pointer">
         <Link href={`/${navPage}`}>
         <div data-aos="flip-down" data-aos-duration="1000" 
-         className={`w-full h-48 rounded-xl  flex flex-col gap-4 p-6 bg-info-500 relative ${bgColor} shadow-md shadow-slate-800 `}>
+         className={`w-full h-48 rounded-xl  flex flex-col gap-4 p-6 bg-info-500 relative ${bgColor} shadow-md shadow-slate-800 dark:shadow-slate-400 `}>
              
              {/* image */}
              <Image
             
              src={image} 
-             className='w-10 h-10 bg-white   py-1 pl-1 rounded-md'
+             className='w-10 h-10 bg-white p-1 rounded-md'
              />
 
             {/* heading */}
@@ -25,7 +25,7 @@ const Card = ({heading, image,cardDetail,navPage,bgColor}) => {
 
             {/* description */}
             <p data-aos="slide-up" data-aos-duration="2000" 
-            className="">{cardDetail}</p>
+            className="w-[90%] text-slate-100">{cardDetail}</p>
 
            
         </div>

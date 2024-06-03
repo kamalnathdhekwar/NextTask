@@ -4,7 +4,7 @@ import EventForm from '../../components/EventForm/EventForm';
 
 const EventFormPage = () => {
   return (
-    <div className=" bg-gray-100 flex items-center justify-center">
+    <div className=" h-screen flex items-center justify-center">
       <EventForm />
     </div>
   );

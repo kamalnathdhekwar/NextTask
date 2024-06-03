@@ -6,9 +6,9 @@ import Link from 'next/link';
 const HeroSection = () => {
   return (
 
-    <div className='h-screen w-full '>
-        <div className="flex flex-col justify-center items-center py-20 space-y-10 ">
-            <div className="mt-7 flex flex-col justify-center items-center md:space-y-5 space-y-2">
+    <div className='lg:h-screen h-96 w-full flex flex-col justify-center items-center'>
+        <div className="flex flex-col justify-center items-center space-y-10 ">
+            <div className=" flex flex-col justify-center items-center md:space-y-5 space-y-2">
                 <h1
                  className="lg:text-9xl md:text-7xl text-5xl t font-extrabold  font-sans  animate-bounce">
                     <span className=' text-orange-600  '>Event </span>

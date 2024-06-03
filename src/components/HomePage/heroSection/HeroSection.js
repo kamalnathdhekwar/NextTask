@@ -14,7 +14,7 @@ const HeroSection = () => {
                 </h1>
 
                 <h2 className="lg:text-2xl font- font-medium  text-slate-700 dark:text-slate-400 text-center ">
-                    " Organize, Search, and Explore Events "
+                    Organize, Search, and Explore Events 
                 </h2>
             </div>
         </div>

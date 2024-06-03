@@ -4,12 +4,13 @@ import Image from 'next/image'
 
 
 
-const Card = ({heading, image,cardDetail,navpage,bgColor}) => {
+const Card = ({heading, image,cardDetail,navPage,bgColor}) => {
   return (
     <div data-aos="zoom-in" data-aos-duration="1500" >
-        <div className=" hover:scale-110 duration-500">
-        <div data-aos="flip-up" data-aos-duration="1000" 
-         className={`w-full lg:w-3/4 h-48 rounded-xl  flex flex-col gap-4 p-6 bg-info-500 relative ${bgColor}`}>
+        <div className=" hover:scale-110 duration-500 cursor-pointer">
+        <Link href={`/${navPage}`}>
+        <div data-aos="flip-down" data-aos-duration="1000" 
+         className={`w-full h-48 rounded-xl  flex flex-col gap-4 p-6 bg-info-500 relative ${bgColor} shadow-md shadow-slate-800 `}>
              
              {/* image */}
              <Image
@@ -26,10 +27,9 @@ const Card = ({heading, image,cardDetail,navpage,bgColor}) => {
             <p data-aos="slide-up" data-aos-duration="2000" 
             className="">{cardDetail}</p>
 
-            {/* navigate link */}
-
            
         </div>
+        </Link>
         </div>
     </div>
   )

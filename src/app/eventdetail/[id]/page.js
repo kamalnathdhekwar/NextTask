@@ -25,8 +25,8 @@ const EventDetailPage = () => {
         <span className='text-slate-900 dark:text-slate-200'> Details</span>
       </h1>
       <div className="w-full">
-        <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100">{event.eventName}</h2>
-        <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">{event.eventDescription}</p>
+        <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100"> <span className='text-2xl'>Event Name :</span> {event.eventName}</h2>
+        <p className="text-lg text-gray-700 dark:text-gray-300 mb-6"><span className='text-md'>Description :</span> {event.eventDescription}</p>
         <p className="text-md text-gray-600 dark:text-gray-400 mb-8">
           <span className="font-semibold text-gray-800 dark:text-gray-200">Deadline:</span> {event.submissionDeadline}
         </p>

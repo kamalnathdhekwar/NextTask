@@ -6,7 +6,7 @@ import eventDetails from '../../../../public/images/eventDetails.png'
 
 export default function Home() {
   return (
-    <div className="w-full p-12 bg-orange-100 dark:bg-red-900  mb-12">
+    <div className="w-full py-12 bg-orange-100 dark:bg-red-900  mb-12">
        
        <h1 className="text-3xl font-bold mb-6 text-center dark:text-slate-200">Welcome to the <span className='text-orange-600 dark:text-orange-400  '>Event Manager</span> App</h1>
 

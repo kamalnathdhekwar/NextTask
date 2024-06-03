@@ -22,11 +22,11 @@ const HeroSection = () => {
 
             <div className="flex flex-row gap-6">
             <Link href="/">
-                <button type="button" class="py-3 px-6 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent bg-orange-600 text-white hover:bg-gray-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-orange-700 dark:text-neutral-800 hover:scale-110 hover:shadow-xl hover:shadow-slate-700 duration-500">Get Started</button>
+                <button type="button" class="py-3 px-6 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent bg-orange-600 text-white hover:bg-gray-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-orange-700 dark:text-neutral-800 hover:scale-110 hover:shadow-xl hover:shadow-slate-700 dark:hover:shadow-slate-200 duration-500 dark:hover:text-slate-100">Get Started</button>
                 </Link>
 
                 <Link href="/eventlist">
-                <button className=' py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border  hover:text-white border-slate-950  hover:bg-slate-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800    hover:scale-110 hover:shadow-xl hover:shadow-slate-700 duration-500'>Find Events</button>
+                <button className=' py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border  hover:text-white border-slate-950  hover:bg-slate-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800  dark:hover:shadow-slate-200  hover:scale-110 hover:shadow-xl hover:shadow-slate-700 duration-500'>Find Events</button>
                 </Link>
             </div>
         </div>

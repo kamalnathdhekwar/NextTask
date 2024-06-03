@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="icon" type="image" href="./logo.png" />
       </head>
       <body className={`${inter.className} dark:bg-slate-900`}>
         <EventProvider>

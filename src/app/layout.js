@@ -14,12 +14,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+      </head>
       <body className={`${inter.className} dark:bg-slate-900`}>
         <EventProvider>
           <Nav />
           {children}
           <Footer />
         </EventProvider>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+    AOS.init();
+  </script>
       </body>
     </html>
   );

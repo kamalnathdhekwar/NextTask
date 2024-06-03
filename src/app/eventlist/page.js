@@ -1,6 +1,6 @@
 "use client";
 
-import EnteredEventList from '../../components/EnteredEvent/EnteredEventList';
+import EnteredEventList from '@/components/EnteredEvent/EnteredEventList';
 
 const EventListPage = () => {
   return (

@@ -37,15 +37,16 @@ export default function Nav() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/about" className={`block py-2 pr-4 pl-3 duration-200 ${pathname === "/about" ? "text-blue-900 underline" : "text-black"} border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-900 lg:p-0 dark:text-slate-200 text-slate-800`}>
-                            page 1
+                        <Link href="/eventform" className={`block py-2 pr-4 pl-3 duration-200 ${pathname === "/about" ? "text-blue-900 underline" : "text-black"} border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-900 lg:p-0 dark:text-slate-200 text-slate-800`}>
+                        EventForm
                         </Link>
                     </li>
                     <li>
-                        <Link href="/faqs" className={`block py-2 pr-4 pl-3 duration-200 ${pathname === "/faqs" ? "text-blue-900 underline" : "text-black"} border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-900 lg:p-0 dark:text-slate-200 text-slate-800`}>
-                        page 2
+                        <Link href="/eventlist" className={`block py-2 pr-4 pl-3 duration-200 ${pathname === "/faqs" ? "text-blue-900 underline" : "text-black"} border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-900 lg:p-0 dark:text-slate-200 text-slate-800`}>
+                        EventList
                         </Link>
                     </li>
+                    
                 </ul>
 
                 <div className="flex gap-2 justify-center items-center">
@@ -66,13 +67,13 @@ export default function Nav() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/about" className={`block py-2 pr-4 pl-3 text-xl hover:scale-110 duration-300 hover:text-indigo-600 ${pathname === "/about" ? "text-slate-100 text-3xl" : "text-blue-900 font-semibold dark:text-slate-300"} dark:text-slate-200`}>
-                        About Us
+                    <Link href="/EventForm" className={`block py-2 pr-4 pl-3 text-xl hover:scale-110 duration-300 hover:text-indigo-600 ${pathname === "/about" ? "text-slate-100 text-3xl" : "text-blue-900 font-semibold dark:text-slate-300"} dark:text-slate-200`}>
+                    EventForm
                     </Link>
                 </li>
                 <li>
-                    <Link href="/faqs" className={`block py-2 pr-4 pl-3 text-xl hover:scale-110 duration-300 hover:text-indigo-600 ${pathname === "/faqs" ? "text-slate-100 text-3xl" : "text-blue-900 font-semibold dark:text-slate-300"} dark:text-slate-200`}>
-                        FAQS
+                    <Link href="/eventlist" className={`block py-2 pr-4 pl-3 text-xl hover:scale-110 duration-300 hover:text-indigo-600 ${pathname === "/faqs" ? "text-slate-100 text-3xl" : "text-blue-900 font-semibold dark:text-slate-300"} dark:text-slate-200`}>
+                                EventList
                     </Link>
                 </li>
             </ul>

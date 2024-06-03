@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav/Nav";
 import Footer from "@/components/Footer/Footer";
-
+import { EventProvider } from '../components/EventContext';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,10 +14,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
-      <body className={`${inter.className}  `} >
+      <body className={`${inter.className}  dark:bg-slate-800`} >
+        <EventProvider>
+
         <Nav/>
         {children}
         <Footer/>
+
+        </EventProvider>
       </body>
     </html>
   );

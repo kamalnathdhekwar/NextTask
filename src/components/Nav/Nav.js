@@ -60,7 +60,7 @@ export default function Nav() {
                 </div>
             </nav>
 
-            <ul className={`fixed flex flex-col pl-10 h-screen top-0 right-[-40px] w-80 bg-yellow-400 dark:bg-slate-900 text-indigo-900 pt-28 md:hidden z-10 transition-transform duration-300 ${isNavOpen ? "translate-x-0" : "translate-x-full"}`}>
+            <ul className={`fixed flex flex-col pl-10 h-screen top-0 right-[-40px] w-80 space-y-6  bg-slate-800 text-indigo-900 pt-48 md:hidden z-10 transition-transform duration-300 ${isNavOpen ? "translate-x-0" : "translate-x-full"}`}>
                 <li>
                     <Link href="/" className={`block py-2 pr-4 pl-3 text-xl hover:scale-110 duration-300 hover:text-indigo-600 ${pathname === "/" ? "text-slate-100 text-3xl" : "text-blue-900 font-semibold dark:text-slate-300"} dark:text-slate-200`}>
                         Home

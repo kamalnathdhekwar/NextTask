@@ -16,7 +16,7 @@ const Card = ({heading, image,cardDetail,navPage,bgColor}) => {
              <Image
             
              src={image} 
-             className='w-10 h-10 bg-white p-1 rounded-md'
+             className='w-10 h-10 bg-white p-1 rounded-md animate-bounce'
              />
 
             {/* heading */}

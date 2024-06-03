@@ -27,48 +27,71 @@ const EnteredEventList = () => {
   });
 
   return (
-    <div className="max-w-lg mx-auto p-8 bg-white shadow-md rounded">
-      <h2 className="text-2xl font-bold mb-6">Entered Events</h2>
-
-      <div className="mb-4">
-        <input
-          type="text"
-          placeholder="Search by event name"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full p-2 border border-gray-300 rounded mb-2"
-        />
-        <input
-          type="date"
-          placeholder="Filter by deadline"
-          value={deadlineFilter}
-          onChange={(e) => setDeadlineFilter(e.target.value)}
-          className="w-full p-2 border border-gray-300 rounded mb-2"
-        />
+    <div className='w-full h-screen flex items-center justify-center dark:bg-gray-500'>
+      <div className="max-w-4xl w-full mx-auto p-10 bg-white shadow-md shadow-gray-600 dark:shadow-white rounded flex flex-col justify-center text-center dark:bg-gray-800 ">
+        <h1 className="lg:text-6xl md:text-4xl text-3xl font-extrabold font-sans mb-6">
+          <span className='text-orange-600'>Entered</span>
+          <span className='text-slate-900 dark:text-slate-200'> Events</span>
+        </h1>
+        <div className="mb-6">
+          <input
+            type="text"
+            placeholder="Search by event name"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full p-2 border border-gray-300 rounded mb-2"
+          />
+          <input
+            type="date"
+            placeholder="Filter by deadline"
+            value={deadlineFilter}
+            onChange={(e) => setDeadlineFilter(e.target.value)}
+            className="w-full p-2 border border-gray-300 rounded"
+          />
+        </div>
+        <div className="overflow-x-auto dark:text-white">
+          <table className="w-full table-auto border-collapse">
+            <thead>
+              <tr className="bg-gray-200 dark:bg-gray-700">
+                <th className="border px-4 py-2">#</th>
+                <th className="border px-4 py-2">Event Name</th>
+                <th className="border px-4 py-2">Description</th>
+                <th className="border px-4 py-2">Deadline</th>
+                <th className="border px-4 py-2">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredEvents.length === 0 && (
+                <tr>
+                  <td colSpan="5" className="text-center p-4 dark:text-white">No events match your criteria.</td>
+                </tr>
+              )}
+              {filteredEvents.map((event, index) => (
+                <tr key={index} className="hover:bg-gray-100 dark:hover:bg-gray-600">
+                  <td className="border px-4 py-2">{index + 1}</td>
+                  <td className="border px-4 py-2">{event.eventName}</td>
+                  <td className="border px-4 py-2">{event.eventDescription}</td>
+                  <td className="border px-4 py-2">{event.submissionDeadline}</td>
+                  <td className="border px-4 py-2">
+                    <button
+                      onClick={() => handleViewMore(index)}
+                      className="text-blue-500 underline hover:text-blue-700 mr-2"
+                    >
+                      View More
+                    </button>
+                    <button
+                      onClick={() => handleRemove(index)}
+                      className="text-red-500 underline hover:text-red-700 "
+                    >
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
-
-      <ul>
-        {filteredEvents.length === 0 && <p>No events match your criteria.</p>}
-        {filteredEvents.map((event, index) => (
-          <li key={index} className="mb-4">
-            <h3 className="text-xl font-semibold">{index + 1}. {event.eventName}</h3>
-            <p>{event.eventDescription}</p>
-            <p className="text-gray-600">Deadline: {event.submissionDeadline}</p>
-            <button
-              onClick={() => handleViewMore(index)}
-              className="text-blue-500 underline"
-            >
-              View More
-            </button>
-            <button
-              onClick={() => handleRemove(index)}
-              className="text-red-500 underline ml-4"
-            >
-              Remove
-            </button>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };

@@ -36,7 +36,7 @@ const Footer = () => {
     </div>
 </div>
 
-<div className="flex flex-col mb-7 lg:pl-0 gap-3 text-white dark:text-slate-200 ">
+{/* <div className="flex flex-col mb-7 lg:pl-0 gap-3 text-white dark:text-slate-200 ">
     <h1 className="text-white font-semibold text-[16px]">Useful Links</h1>
     <div className="flex flex-col gap-2 mt-2">
       <div className="text-[14px] cursor-pointer  transition-all duration-200 hover:text-gray-200">
@@ -55,28 +55,25 @@ const Footer = () => {
         <Link href="/resources">Resources</Link>
       </div>
     </div>
-</div>
+</div> */}
 
 <div className="sm:pl-5 flex flex-col gap-y-8 ">
     <div className="flex flex-col gap-3 justify-center items-start">
       <p className="text-base font-bold text-gray-100">Follow us on</p>
       <div className="flex items-start justify-center gap-3">
-        <a target="_blank" className="rounded-xl p-2 border border-gray-100 hover:cursor-pointer" href="https://www.instagram.com/arshgoyalyt">
+        <a target="_blank" className="rounded-xl p-2 border border-gray-100 hover:cursor-pointer" href="https://www.instagram.com/kamalnath_06">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-[1.375rem] stroke-gray-50" viewBox="0 0 24 24">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37M17.5 6.5h.01"></path>
           </svg>
         </a>
-        <a target="_blank" className="rounded-xl p-2 border border-gray-100 hover:cursor-pointer" href="https://www.youtube.com/@ArshGoyal">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" className="w-[1.375rem]">
-            <path fill="#fff" fillRule="evenodd" d="M19.892 7.367a3.9 3.9 0 0 0-.723-1.8 2.6 2.6 0 0 0-1.82-.77c-2.536-.183-6.348-.183-6.348-.183s-3.81 0-6.35.184a2.6 2.6 0 0 0-1.818.769c-.39.529-.64 1.149-.725 1.8a28 28 0 0 0-.183 2.94v1.375q.013 1.474.183 2.939c.087.652.333 1.274.719 1.807a3.1 3.1 0 0 0 2.005.778c1.45.138 6.17.183 6.17.183s3.814 0 6.35-.183a2.6 2.6 0 0 0 1.82-.77c.388-.53.636-1.15.721-1.802q.17-1.463.184-2.939v-1.39a28 28 0 0 0-.185-2.938M9.174 13.375V8.223l4.95 2.584z" clipRule="evenodd"></path>
-          </svg>
-        </a>
-        <a target="_blank" className="rounded-xl p-2 border border-gray-100 hover:cursor-pointer" href="https://twitter.com/arsh_goyal">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" className="w-[1.375rem]">
-            <path fill="#fff" d="m12.924 9.87 5.77-6.57h-2.576l-4.404 5.018L7.806 3.3H2.2l6.542 8.4-6.148 7H5.17l4.782-5.444 4.242 5.444H19.8zm-1.995 2.272-1.21-1.555-4.703-6.034h1.936l3.794 4.864 1.21 1.555L17 17.447h-1.936z"></path>
-          </svg>
-        </a>
+        <a target="_blank" className="rounded-xl p-2 border border-gray-100 hover:cursor-pointer" href="https://www.linkedin.com/in/kamalnath-dhekwar-0a5a38261/">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="w-[1.375rem]">
+    <path fill="#fff" d="M22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.77 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.23 0 22.23 0zM7.12 20.452H3.557V9H7.12v11.452zM5.34 7.433c-1.138 0-2.06-.927-2.06-2.068 0-1.14.922-2.068 2.06-2.068 1.14 0 2.06.928 2.06 2.068 0 1.14-.92 2.068-2.06 2.068zM20.452 20.452h-3.563v-5.925c0-1.41-.027-3.227-1.967-3.227-1.97 0-2.27 1.539-2.27 3.122v6.03H9.092V9H12.56v1.564h.047c.48-.91 1.646-1.87 3.386-1.87 3.617 0 4.287 2.38 4.287 5.472v6.286h-.001z"></path>
+  </svg>
+</a>
+
+  
       </div>
     </div>
     <div className="lg:pl-0 gap-3 text-white dark:text-slate-200 ">
@@ -86,15 +83,10 @@ const Footer = () => {
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="w-5 h-5 stroke-2 stroke-white">
             <path d="m21 6-8.4 7.05a1 1 0 0 1-1.2 0L3 6m18 0a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1m18 0v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6"></path>
           </svg>
-          <a href="mailto:arshgoyal98@gmail.com">arshgoyal98@gmail.com</a>
+          <a href="mailto:kamalnathdhekwar@gmail.com">kamalnathdhekwar@gmail.com</a>
         </div>
       </div>
-      <button className="mt-4 text-[14px] cursor-pointer text-white transition-all duration-200 flex gap-2 items-center group">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5 stroke-2 stroke-white group-hover:stroke-gray-200" viewBox="0 0 24 24">
-          <path d="m21 6-8.4 7.05a1 1 0 0 1-1.2 0L3 6m18 0a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1m18 0v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6"></path>
-        </svg>
-        Subscribe to Newsletter
-      </button>
+      
     </div>
 </div>
 

@@ -1,18 +1,26 @@
-# Project Overview
+# Event Manager Web Application
 
-Welcome to my Next.js project, bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). This repository showcases a frontend user interface (UI) designed as part of an assignment before joining an frontened engineer internship provided by Arsh Goyal.
+Welcome to the Event Manager web application, built using Next.js and Tailwind CSS. This project is currently in progress and serves as a frontend interface for managing events. The application allows users to add, list, delete, and search for events by name, utilizing local storage for data management.
 
-## Task Description
+## Features
 
-The objective of this project is to create a frontend UI for a page that displays data with filters. The UI design is inspired by the current interface of [proelevate.in](https://proelevate.in). The page is intended to present data in a structured format, along with options to refine and filter the displayed data. The technologies used in this project are Next.js and Tailwind CSS.
+- **Add Events**: Users can create new events and store them in local storage.
+- **List Events**: Displays a list of all the events stored in local storage.
+- **Delete Events**: Users can remove events from the list.
+- **Search Events**: Find events by name using the search functionality.
+
+## Technologies Used
+
+- **Next.js**: A React framework for server-rendered applications.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
 
 ## Getting Started
 
-To get started with this project, follow the steps below:
+To run this project locally, follow the instructions below:
 
 ### Run the Development Server
 
-First, start the development server:
+Start the development server using one of the following commands:
 
 ```bash
 npm run dev

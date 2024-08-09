@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
           <Footer />
         </EventProvider>
 
-        <AOSInitializer />
+        <AOSInitializer />``
       </body>
     </html>
   );

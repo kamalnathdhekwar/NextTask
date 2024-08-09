@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 import { CgClose } from 'react-icons/cg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import ThemeChanger from '../ThemeChanger/ThemeChanger.js';
-import logo from '../../../public/images/logo.png';
+import logo from '../../../public/images/TaskLogo.png';
 
 
 export default function Nav() {
@@ -22,11 +22,11 @@ export default function Nav() {
                     <Link href="/" className='flex justify-center items-center gap-2'>
                         <Image
                             src={logo}
-                            className=" lg:w-11 md:w-9 w-7"
+                            className=" lg:w-12   md:w-9 w-7"
                             alt="Logo"
                        
                         /> 
-                       <h1 className="lg:text-3xl md:text-2xl text-xl font-bold md:font-extrabold  text-slate-900 dark:text-slate-300">ProEIevate</h1>
+                       <h1 className="lg:text-[33px] md:text-2xl text-xl font-bold md:font-extrabold  text-slate-900 dark:text-slate-300">NextEvent</h1>
                     </Link>
                 </div>
 

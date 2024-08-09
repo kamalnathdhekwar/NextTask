@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import FooterLogo from '../../../public/images/FooterLogo.svg';
+import FooterLogo from '../../../public/images/FooterLogo.png';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -13,7 +13,7 @@ const Footer = () => {
 
        <div className="flex flex-col gap-3 justify-center items-start w-full lg:w-1/3">
             <Image
-            className="h-10 w-56"
+            className="h-16 w-48"
               src={FooterLogo}
               alt="ProElevate Logo"
              
@@ -25,7 +25,7 @@ const Footer = () => {
 <div className="flex  sm:flex-row flex-col  justify-between lg:pl-5  pl-[12px] gap-x-8 flex-wrap">
 
 <div className="flex flex-col mb-7 lg:pl-0 gap-3">
-    <h1 className="text-white dark:text-slate-200  font-semibold text-[16px]">ProElevate&apos;s</h1>
+    <h1 className="text-white dark:text-slate-200  font-semibold text-[16px]">NextEvent &apos;s</h1>
     <div className="flex flex-col gap-2 mt-2">
       <div className="text-[14px] cursor-pointer text-white  dark:text-slate-200  transition-all duration-200 hover:text-gray-200">
         <Link href="/privacy-policy">Privacy Policy</Link>
